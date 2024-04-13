@@ -7,8 +7,9 @@ class TradeInfo
 public:
     TradeInfo();
     TradeInfo(const DateTime& dateTime, double open, double high, double low, double close, double volume)
-        : mDateTime(dateTime), mOpen(open), mHigh(high), mLow(low), mClose(close), mVolume(volume)
-    {}
+        : mDateTime(dateTime), mOpen(open), mHigh(high), mLow(low), mClose(close), mVolume(volume){
+
+    }
     double getOpen() const;
     void setOpen(double open);
     double getHigh() const;

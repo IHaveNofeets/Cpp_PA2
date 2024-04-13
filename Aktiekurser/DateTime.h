@@ -2,6 +2,7 @@
 #define DATETIME_H
 
 #include <string>
+#include <vector>
 
 class DateTime
 {
@@ -32,5 +33,6 @@ public:
 private:
     unsigned int mYear = 0, mMonth = 0, mDay = 0, mHour = 0, mMinute = 0, mSecond = 0;
     int mTimezone = 0;
+    std::vector<std::string> split(const std::string& line, char delim);
 };
 #endif // DATETIME_H
