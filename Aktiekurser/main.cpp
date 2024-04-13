@@ -29,21 +29,7 @@ void printTrades(const std::vector<TradeInfo>& ti) {
 }
 
 int main() {
-    //tobias test
     TradeLoader sl;
-    sl.load("../StockTrading/COLOB.DKDKK_Candlestick_1_M_BID_01.01.2017-31.12.2017.csv");
-    std::cout << "data: " << sl.getData()[1][0] << std::endl;
-    std::cout << "getSecond: " << sl.getTradeInfo()[1].getDateTime().getSecond() <<
-        " getMinute: " << sl.getTradeInfo()[1].getDateTime().getMinute() <<
-        " getHour: " << sl.getTradeInfo()[1].getDateTime().getHour() <<
-        " getDay: " << sl.getTradeInfo()[1].getDateTime().getDay() <<
-        " getMonth: " << sl.getTradeInfo()[1].getDateTime().getMonth() <<
-        " getYear: " << sl.getTradeInfo()[1].getDateTime().getYear() <<
-        " getTimezone: " << sl.getTradeInfo()[1].getDateTime().getTimezone() << std::endl;
-
-    return 1;
-
-    //TradeLoader sl;
     sl.load("../StockTrading/COLOB.DKDKK_Candlestick_1_M_BID_01.01.2017-31.12.2017.csv");
     sl.load("../StockTrading/COLOB.DKDKK_Candlestick_1_M_BID_01.01.2018-31.12.2018.csv");
     sl.load("../StockTrading/COLOB.DKDKK_Candlestick_1_M_BID_01.01.2019-31.12.2019.csv");
