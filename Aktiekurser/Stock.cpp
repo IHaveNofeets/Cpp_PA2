@@ -1,8 +1,7 @@
 #include "Stock.h"
-#include <iomanip>
+#include <limits>
 #include <iostream>
 #include <ostream>
-#include <limits>
 
 Stock::Stock() {}
 
@@ -69,6 +68,3 @@ void Stock::setAllTradeInfo(const std::vector<TradeInfo> &tradeInfo){
     mTradeInfo = tradeInfo;
 }
 
-//Tradeinfo objekt indsættes i klasse.
-//Anden periode "TRADE_INTERVAL" benyttes. High, Low, Close og volumen (minut) laves om til ny periode.
-//

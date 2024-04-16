@@ -4,6 +4,7 @@
 #include "TradeLoader.h"
 #include "Stock.h"
 
+
 void printTrade(const TradeInfo& ti) {
     char oldFill = std::cout.fill();
     std::cout.fill('0');
@@ -30,6 +31,7 @@ void printTrades(const std::vector<TradeInfo>& ti) {
 
 int main() {
     TradeLoader sl;
+
     sl.load("../StockTrading/COLOB.DKDKK_Candlestick_1_M_BID_01.01.2017-31.12.2017.csv");
     sl.load("../StockTrading/COLOB.DKDKK_Candlestick_1_M_BID_01.01.2018-31.12.2018.csv");
     sl.load("../StockTrading/COLOB.DKDKK_Candlestick_1_M_BID_01.01.2019-31.12.2019.csv");
@@ -38,11 +40,13 @@ int main() {
     sl.load("../StockTrading/COLOB.DKDKK_Candlestick_1_M_BID_01.01.2022-31.12.2022.csv");
     sl.load("../StockTrading/COLOB.DKDKK_Candlestick_1_M_BID_01.01.2023-21.03.2022.csv");
 
+    //sl.load("../StockTrading/ColoTest.csv");
     std::vector<TradeInfo> tinfo = sl.getTradeInfo();
 
     Stock coloplast;
 
     coloplast.setAllTradeInfo(tinfo);
+
 
     std::vector<TradeInfo> openHour = coloplast.getTrades(Stock::TRADE_INTERVAL_HOUR);
     std::vector<TradeInfo> open2Hour = coloplast.getTrades(Stock::TRADE_INTERVAL_2HOUR);
@@ -69,6 +73,7 @@ int main() {
     std::cout << "-----------------------" << std::endl;
     printTrades(openDay);
     std::cout << std::endl;
+
 
     return 0;
 
