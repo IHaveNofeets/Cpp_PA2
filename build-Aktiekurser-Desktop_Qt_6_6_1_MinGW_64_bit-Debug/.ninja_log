@@ -1,4 +1,5 @@
 # ninja log v5
+<<<<<<< HEAD
 3	142	7349858163550419	CMakeFiles/Aktiekurser.dir/TradeInfo.cpp.obj	33938d9d88c6bc11
 2	185	7349858163984291	CMakeFiles/Aktiekurser.dir/DateTime.cpp.obj	dac88dc76e340d1b
 4	251	7349858164646247	CMakeFiles/Aktiekurser.dir/Stock.cpp.obj	1f442b2cc0f81e3a
@@ -57,3 +58,17 @@
 255	335	7350754097743123	Aktiekurser.exe	80eb673cfde722e
 2	260	7350776160546323	CMakeFiles/Aktiekurser.dir/Stock.cpp.obj	1f442b2cc0f81e3a
 260	344	7350776161366999	Aktiekurser.exe	80eb673cfde722e
+=======
+6	232	7348788423583362	CMakeFiles/Aktiekurser.dir/TradeInfo.cpp.obj	33938d9d88c6bc11
+2	310	7349065980948258	CMakeFiles/Aktiekurser.dir/Stock.cpp.obj	1f442b2cc0f81e3a
+1	323	7349058535140404	CMakeFiles/Aktiekurser.dir/main.cpp.obj	5bc4d4d22c671be8
+311	389	7349065981714494	Aktiekurser.exe	80eb673cfde722e
+2	216	7348750961127907	CMakeFiles/Aktiekurser.dir/DateTime.cpp.obj	dac88dc76e340d1b
+5	320	7348750962176789	CMakeFiles/Aktiekurser.dir/TradeLoader.cpp.obj	ff38a7c5c05d04b9
+23	356	7350378996092985	CMakeFiles/Aktiekurser.dir/TradeInfo.cpp.obj	656eb36113aea7bc
+7	489	7350378997458544	CMakeFiles/Aktiekurser.dir/DateTime.cpp.obj	806afba196dbdec8
+15	578	7350378998356756	CMakeFiles/Aktiekurser.dir/Stock.cpp.obj	44f9b47aecbe0e21
+29	694	7350378999463388	CMakeFiles/Aktiekurser.dir/TradeLoader.cpp.obj	966eb99e2f0f2231
+3	840	7350379000935898	CMakeFiles/Aktiekurser.dir/main.cpp.obj	379da8a7b70fd4a8
+840	1144	7350379003829087	Aktiekurser.exe	80eb673cfde722e
+>>>>>>> 7aa97ff7b4a760322cc69d804c54cdc583f883b4

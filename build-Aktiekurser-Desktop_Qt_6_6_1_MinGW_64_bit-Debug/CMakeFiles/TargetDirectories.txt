@@ -1,7 +1,7 @@
-C:/Users/marcu/Desktop_folder/c++/cpp_pa2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/Aktiekurser.dir
-C:/Users/marcu/Desktop_folder/c++/cpp_pa2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
-C:/Users/marcu/Desktop_folder/c++/cpp_pa2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
-C:/Users/marcu/Desktop_folder/c++/cpp_pa2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
-C:/Users/marcu/Desktop_folder/c++/cpp_pa2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/install.dir
-C:/Users/marcu/Desktop_folder/c++/cpp_pa2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
-C:/Users/marcu/Desktop_folder/c++/cpp_pa2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+C:/Users/tobia/OneDrive - Syddansk Universitet/Skrivebord/SDU/Sem_2/C++/PA2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/Aktiekurser.dir
+C:/Users/tobia/OneDrive - Syddansk Universitet/Skrivebord/SDU/Sem_2/C++/PA2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/tobia/OneDrive - Syddansk Universitet/Skrivebord/SDU/Sem_2/C++/PA2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/tobia/OneDrive - Syddansk Universitet/Skrivebord/SDU/Sem_2/C++/PA2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+C:/Users/tobia/OneDrive - Syddansk Universitet/Skrivebord/SDU/Sem_2/C++/PA2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/install.dir
+C:/Users/tobia/OneDrive - Syddansk Universitet/Skrivebord/SDU/Sem_2/C++/PA2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+C:/Users/tobia/OneDrive - Syddansk Universitet/Skrivebord/SDU/Sem_2/C++/PA2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
