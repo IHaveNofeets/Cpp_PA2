@@ -5,15 +5,12 @@
 
 Stock::Stock() {}
 
-//fejl: redefinition
-//Stock::Stock(const std::vector<TradeInfo>& tradeInfo) : mTradeInfo(tradeInfo) {}
-
 std::vector<TradeInfo> Stock::getTrades(unsigned int interval) {
 
     // Creating new object of TradeInfo
     std::vector<TradeInfo> newStockInfo;
 
-    // N/A interval
+    // N/A periode
     if (interval == 0 || interval == 1) {
         std::cout << "Not applicable time interval" << std::endl;
         exit(0);
@@ -25,36 +22,61 @@ std::vector<TradeInfo> Stock::getTrades(unsigned int interval) {
     }
     // Hour, 2hour, 4hour and day
     else if (interval >= 3 && interval <= 6) {
-        int numOfElements = 0;
-        if (interval == 3) // Number of elements per hour
-            numOfElements = 60;
-        if (interval == 4) // Number of elements per 2 hours
-            numOfElements = 120;
-        if (interval == 5) // Number of elements per 4 hours
-            numOfElements = 240;
-        if (interval == 6) // Number of elements per day
-            numOfElements = 420; // 9 to 16. 7 hours is 420 minutes.
+        // Reserve memory for the newStockInfo vector
+        newStockInfo.reserve(mTradeInfo.size()); // Will be fittet later
 
-        // reserve memory for vector
-        newStockInfo.reserve(mTradeInfo.size() / numOfElements);
+        // While loop for appending datetime, open, high, low, close, sumOfVolume of data segments based on period
+        size_t i = 0;
+        while (i < mTradeInfo.size()) {
 
-        for (size_t i = 0; i < mTradeInfo.size(); i += numOfElements) {
-            // initialize variables
+            // Start time for segment of mTradeInfo (original data)
+            int startTime = (interval == 6) ? mTradeInfo[i].getDateTime().getDay() : mTradeInfo[i].getDateTime().getHour();
+
+            // Next element in mTradeInfo
+            size_t nextElement = i + 1;
+            // While loop for logic of segments of data
+            while (nextElement < mTradeInfo.size()) {
+                // Time of next element
+                int nextElementTime = (interval == 6) ? mTradeInfo[nextElement].getDateTime().getDay() : mTradeInfo[nextElement].getDateTime().getHour();
+
+                // Logic for segments of data based on period.
+                if (interval == 3 && nextElementTime != startTime) { // 1-Hourly interval
+                    break;
+                } else if (interval == 4 && (nextElementTime - startTime + 24) % 24 >= 2) { // 2-hourly interval
+                    break;
+                } else if (interval == 5 && (nextElementTime - startTime + 24) % 24 >= 4) { // 4-hourly interval
+                    break;
+                } else if (interval == 6 && (nextElementTime - startTime + 7) % 7 >= 1) { // Daily interval
+                    break;
+                }
+
+                // Move to the next data point
+                ++nextElement;
+            }
+
+            // Initialize variables for volume, high, and low
             double volumeSum = 0.0;
             double high = std::numeric_limits<double>::min();
             double low = std::numeric_limits<double>::max();
 
-            // for numOfElements elements
-            for (size_t j = i; j < std::min(i + numOfElements, mTradeInfo.size()); ++j) {
-                // calculate sum of volume, low and high for the increment of numOfElements.
+            // Calculate sum of volume, high, and low for the current period
+            for (size_t j = i; j < nextElement; ++j) {
                 volumeSum += mTradeInfo[j].getVolume();
                 high = std::max(high, mTradeInfo[j].getHigh());
                 low = std::min(low, mTradeInfo[j].getLow());
             }
-            // appending values to new StockInfo object
-            TradeInfo newTradeInfo(mTradeInfo[i].getDateTime(), mTradeInfo[i].getOpen(), high, low, mTradeInfo[std::min(i + numOfElements - 1, mTradeInfo.size() - 1)].getClose(), volumeSum);
+
+            // Creating a new object of tradeInfo with values of datetime, open, high, low, last close, sum of volume
+            TradeInfo newTradeInfo(mTradeInfo[i].getDateTime(), mTradeInfo[i].getOpen(), high, low, mTradeInfo[nextElement - 1].getClose(), volumeSum);
+            // Appending TradeInfo object to TradeInfo vector.
             newStockInfo.push_back(newTradeInfo);
+
+            // Updating the starting index for the next period
+            i = nextElement;
         }
+        // Fitting allocated memory to vector
+        newStockInfo.shrink_to_fit();
+        // Returning vector.
         return newStockInfo;
     }
     else {return mTradeInfo;};

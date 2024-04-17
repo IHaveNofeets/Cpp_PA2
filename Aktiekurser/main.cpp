@@ -38,7 +38,7 @@ int main() {
     sl.load("../StockTrading/COLOB.DKDKK_Candlestick_1_M_BID_01.01.2020-31.12.2020.csv");
     sl.load("../StockTrading/COLOB.DKDKK_Candlestick_1_M_BID_01.01.2021-31.12.2021.csv");
     sl.load("../StockTrading/COLOB.DKDKK_Candlestick_1_M_BID_01.01.2022-31.12.2022.csv");
-    sl.load("../StockTrading/COLOB.DKDKK_Candlestick_1_M_BID_01.01.2023-21.03.2022.csv");
+    sl.load("../StockTrading/COLOB.DKDKK_Candlestick_1_M_BID_01.01.2023-21.03.2023.csv");
 
     //sl.load("../StockTrading/ColoTest.csv");
     std::vector<TradeInfo> tinfo = sl.getTradeInfo();
