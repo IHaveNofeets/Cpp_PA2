@@ -11,7 +11,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/marcu/Desktop_folder/c++/cpp_pa2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug"
+			"value" : "C:/Users/tobia/OneDrive - Syddansk Universitet/Skrivebord/SDU/Sem_2/C++/PA2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug"
 		},
 		{
 			"name" : "Aktiekurser_IS_TOP_LEVEL",
@@ -35,7 +35,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/marcu/Desktop_folder/c++/cpp_pa2/Cpp_PA2/Aktiekurser"
+			"value" : "C:/Users/tobia/OneDrive - Syddansk Universitet/Skrivebord/SDU/Sem_2/C++/PA2/Cpp_PA2/Aktiekurser"
 		},
 		{
 			"name" : "CMAKE_ADDR2LINE",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/marcu/Desktop_folder/c++/cpp_pa2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug"
+			"value" : "c:/Users/tobia/OneDrive - Syddansk Universitet/Skrivebord/SDU/Sem_2/C++/PA2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -515,7 +515,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/marcu/Desktop_folder/c++/cpp_pa2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/tobia/OneDrive - Syddansk Universitet/Skrivebord/SDU/Sem_2/C++/PA2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -587,7 +587,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/marcu/Desktop_folder/c++/cpp_pa2/Cpp_PA2/Aktiekurser"
+			"value" : "C:/Users/tobia/OneDrive - Syddansk Universitet/Skrivebord/SDU/Sem_2/C++/PA2/Cpp_PA2/Aktiekurser"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1087,7 +1087,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Users/marcu/Desktop_folder/c++/cpp_pa2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake"
+			"value" : "C:/Users/tobia/OneDrive - Syddansk Universitet/Skrivebord/SDU/Sem_2/C++/PA2/Cpp_PA2/build-Aktiekurser-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake"
 		},
 		{
 			"name" : "CMAKE_PROJECT_NAME",
