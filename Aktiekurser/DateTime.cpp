@@ -1,4 +1,5 @@
 #include "DateTime.h"
+#include <iostream>
 //  unsigned int mYear = 0, mMonth = 0, mDay = 0, mHour = 0, mMinute = 0, mSecond = 0;
 //  int mTimezone = 0;
 DateTime::DateTime() {}
@@ -7,9 +8,15 @@ void DateTime::parse(const std::string& dateTime){
     //data ex: 29.12.2017 16:18:00.000 GMT+0100
     //split data
     std::vector<std::string> data = split(dateTime,' ');
+
     std::string date = data[0];
     std::string time = data[1];
-    std::string timeZone = data[2];
+    std::string timeZone = "";
+
+    if(data.size() >= 3){
+        timeZone = data[2];
+    }
+
     //split data more
     std::vector<std::string> datedata = split(date,'.');
     std::vector<std::string> timedata = split(time,':');

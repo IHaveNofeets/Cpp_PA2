@@ -1,0 +1,7 @@
+/home/sammy/Desktop/Cpp PA2/Cpp_PA2/build-Aktiekurser-Desktop-Debug/CMakeFiles/Aktiekurser.dir
+/home/sammy/Desktop/Cpp PA2/Cpp_PA2/build-Aktiekurser-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/sammy/Desktop/Cpp PA2/Cpp_PA2/build-Aktiekurser-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/sammy/Desktop/Cpp PA2/Cpp_PA2/build-Aktiekurser-Desktop-Debug/CMakeFiles/list_install_components.dir
+/home/sammy/Desktop/Cpp PA2/Cpp_PA2/build-Aktiekurser-Desktop-Debug/CMakeFiles/install.dir
+/home/sammy/Desktop/Cpp PA2/Cpp_PA2/build-Aktiekurser-Desktop-Debug/CMakeFiles/install/local.dir
+/home/sammy/Desktop/Cpp PA2/Cpp_PA2/build-Aktiekurser-Desktop-Debug/CMakeFiles/install/strip.dir

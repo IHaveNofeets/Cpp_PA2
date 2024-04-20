@@ -10,6 +10,7 @@ add_executable(Aktiekurser main.cpp
     TradeInfo.h TradeInfo.cpp
     TradeLoader.h TradeLoader.cpp
     Stock.h Stock.cpp
+    Udvidelsen.h Udvidelsen.cpp
 )
 
 include(GNUInstallDirs)

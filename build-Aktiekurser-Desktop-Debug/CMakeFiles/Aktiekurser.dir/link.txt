@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/Aktiekurser.dir/main.cpp.o CMakeFiles/Aktiekurser.dir/DateTime.cpp.o CMakeFiles/Aktiekurser.dir/TradeInfo.cpp.o CMakeFiles/Aktiekurser.dir/TradeLoader.cpp.o CMakeFiles/Aktiekurser.dir/Stock.cpp.o CMakeFiles/Aktiekurser.dir/Udvidelsen.cpp.o -o Aktiekurser 
