@@ -8,7 +8,7 @@ class Udvidelsen
 {
 public:
     Udvidelsen();
-
+    //Stock& reffere til stock
     void UdvidelsenMain(Stock& st);
 };
 

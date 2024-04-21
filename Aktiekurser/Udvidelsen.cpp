@@ -8,13 +8,16 @@ Udvidelsen::Udvidelsen()
 
 void Udvidelsen::UdvidelsenMain(Stock& st){
 
+    //includere vectoren med TradeInfo
     std::vector<TradeInfo> TradesHour = st.getTrades(Stock::TRADE_INTERVAL_HOUR);
 
+    //de fire, to int og to double, værdier som bruges til udregningen af profit
     int endhour = 0;
     int days = 0;
     double stockquant = 0;
     double profit = 0;
     
+    //først bedes brugeren at indskrive et købt tidpunkt
     std::cout << "Hvornaar vil du starte en handel?" << std::endl;
 
     std::cout << "Date? format: DD.MM.YYYY" << std::endl;
@@ -25,12 +28,13 @@ void Udvidelsen::UdvidelsenMain(Stock& st){
     std::string time = "";
     std::cin >> time;
     DateTime startTime;
-    //parse string to DateTime from a user from Danmark
+    //parse string to DateTime from a user from Denmark
     startTime.parse(date + " " + time + " GMT+0100");
 
+    //derefter hvor længe inden brugeren igen sælger (dette kan overskride 24 timer)
     std::cout << "hvor mange timer til salg?" << std::endl;
     std::cin >> endhour;
-    
+    //hvor mange aktier brugeren vil købe
     std::cout << "hvor mange aktier vil du købe?" << std::endl;
     std::cin >> stockquant;
 
@@ -75,6 +79,7 @@ void Udvidelsen::UdvidelsenMain(Stock& st){
         return;
     }
 
+    //til sidst udregnes og udskrives profit, og siger enten om man ville have tjent eller tabt penge
     profit = (TradesHour[endIndex].getClose() - TradesHour[startIndex].getOpen()) * stockquant;
     if(profit >= 0){
         std::cout << "din profit er: " << profit << " kr" << std::endl;

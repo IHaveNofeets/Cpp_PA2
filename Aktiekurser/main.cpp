@@ -74,6 +74,7 @@ int main() {
     printTrades(openDay);
     std::cout << std::endl;
 
+    //udvidelsen kaldes
     Udvidelsen ud;
     ud.UdvidelsenMain(coloplast);
 
