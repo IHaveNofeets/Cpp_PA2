@@ -47,13 +47,12 @@ int main() {
 
     coloplast.setAllTradeInfo(tinfo);
 
-    std::vector<TradeInfo> openMinute = coloplast.getTrades(Stock::TRADE_INTERVAL_MINUTE);
     std::vector<TradeInfo> openHour = coloplast.getTrades(Stock::TRADE_INTERVAL_HOUR);
     std::vector<TradeInfo> open2Hour = coloplast.getTrades(Stock::TRADE_INTERVAL_2HOUR);
     std::vector<TradeInfo> open4Hour = coloplast.getTrades(Stock::TRADE_INTERVAL_4HOUR);
     std::vector<TradeInfo> openDay = coloplast.getTrades(Stock::TRADE_INTERVAL_DAY);
 
-    printTrades(openMinute);
+
     std::cout << "-----------------------" << std::endl;
     std::cout << "-- Open (hour) --" << std::endl;
     std::cout << "-----------------------" << std::endl;

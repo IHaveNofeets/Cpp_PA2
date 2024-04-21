@@ -1,7 +1,6 @@
 #include "DateTime.h"
 #include <iostream>
-//  unsigned int mYear = 0, mMonth = 0, mDay = 0, mHour = 0, mMinute = 0, mSecond = 0;
-//  int mTimezone = 0;
+
 DateTime::DateTime() {}
 
 void DateTime::parse(const std::string& dateTime){
@@ -9,17 +8,25 @@ void DateTime::parse(const std::string& dateTime){
     //split data
     std::vector<std::string> data = split(dateTime,' ');
 
+    //return if the format is not right
+    if(data.size() < 3){
+        std::cout << "Invalued dateTime to parse: " << dateTime << std::endl;
+        return;
+    }
+
     std::string date = data[0];
     std::string time = data[1];
-    std::string timeZone = "";
-
-    if(data.size() >= 3){
-        timeZone = data[2];
-    }
+    std::string timeZone = data[2];
 
     //split data more
     std::vector<std::string> datedata = split(date,'.');
     std::vector<std::string> timedata = split(time,':');
+
+    //return if the format is not right
+    if(datedata.size() < 3 || timedata.size() < 3){
+        std::cout << "Invalued dateTime to parse: " << dateTime << std::endl;
+        return;
+    }
 
     //handel day:
     mDay = std::stoi(datedata[0]);
@@ -112,4 +119,14 @@ std::vector<std::string> DateTime::split(const std::string& line, char delim){
         line_remender.erase(0,pos+1);
     }
     return out;
+}
+
+//get out in format YYYYMMDDHHmmSS (M is month and m is minute)
+unsigned long DateTime::toLong() const{
+    return getSecond() +
+           getMinute() *    100 +
+           getHour() *      10000 +
+           getDay() *       1000000 +
+           getMonth() *     100000000 +
+           getYear() *      10000000000;
 }

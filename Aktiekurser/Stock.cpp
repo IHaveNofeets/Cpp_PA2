@@ -48,6 +48,10 @@ std::vector<TradeInfo> Stock::getTrades(unsigned int interval) {
                     break;
                 } else if (interval == 6 && (nextElementTime - startTime + 7) % 7 >= 1) { // Daily interval
                     break;
+                }else if (mTradeInfo[i].getDateTime().getMonth() != mTradeInfo[nextElement].getDateTime().getMonth()){
+                    break;
+                }else if (mTradeInfo[i].getDateTime().getYear() != mTradeInfo[nextElement].getDateTime().getYear()){
+                    break;
                 }
 
                 // Move to the next data point

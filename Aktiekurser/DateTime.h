@@ -30,6 +30,8 @@ public:
     void setSecond(unsigned int second);
     int getTimezone() const;
     void setTimezone(int value);
+
+    unsigned long toLong() const;
 private:
     unsigned int mYear = 0, mMonth = 0, mDay = 0, mHour = 0, mMinute = 0, mSecond = 0;
     int mTimezone = 0;
